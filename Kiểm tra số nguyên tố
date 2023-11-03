@@ -1,0 +1,22 @@
+import kotlin.math.sqrt
+
+fun main() {
+    var n = readLine()?.toInt() ?: 0
+    if (n < 2) {
+        println("No")
+    } else {
+        val x = sqrt(n.toDouble()).toInt()
+        var isPrime = true
+        for (i in 2..x) {
+            if (n % i == 0) {
+                isPrime = false
+                break
+            }
+        }
+        if (isPrime) {
+            println("Yes")
+        } else {
+            println("No")
+        }
+    }
+}
