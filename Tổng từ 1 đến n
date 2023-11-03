@@ -1,0 +1,5 @@
+fun main(){
+    var n = readLine()?.toLong()?:0
+
+    print(n*(n+1)/2)
+}
