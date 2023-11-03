@@ -1,0 +1,17 @@
+import kotlin.math.ceil
+
+fun main() {
+    var x= readln().toLong()
+    var a= arrayListOf(x)
+    while (x!=1.toLong()){
+        if (x%2==0.toLong()){
+            x/=2
+            a.add(x)
+        }
+        else{
+            x=x *3 +1
+            a.add(x)
+        }
+    }
+    print(a.size)
+}
