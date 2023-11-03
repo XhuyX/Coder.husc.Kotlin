@@ -1,0 +1,19 @@
+import kotlin.math.sqrt
+fun main() {
+    var n= readln()
+    var x:Char='x'
+    if (n!=null){
+        x=n[0]
+    }
+
+    var a = readLine()?.toInt()?:0
+    var nn = readLine()?.split(" ")
+    if (nn!=null){
+        for (i in 0..a-1){
+            for (j in 1..nn[i].toInt()){
+                print(x)
+            }
+            println()
+        }
+    }
+}
