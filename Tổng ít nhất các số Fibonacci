@@ -1,0 +1,27 @@
+fun main() {
+    var n = readLine()?.toLong() ?: 0
+    var fibo = mutableListOf<Long>(0)
+    var x:Long = 0
+    var y:Long = 1
+    var s:Long = 1
+    for (i in 1..53) {
+        s = x + y
+        fibo.add(s)
+        x = y
+        y = s
+    }
+    print("$n = ")
+    for (i in 53 downTo 0) {
+        if (n>= fibo[i]){
+            print(fibo[i])
+            print(" ")
+            n= n- fibo[i]
+            if (n==0.toLong()){
+                break
+            }
+            else{
+                print("+ ")
+            }
+        }
+    }
+}
