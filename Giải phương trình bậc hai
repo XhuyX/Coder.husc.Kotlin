@@ -1,0 +1,26 @@
+import kotlin.math.sqrt
+
+fun main() {
+    var x= readLine()?.split(" ")
+    if (x!=null){
+        var a=x[0].toDouble()
+        var b =x[1].toDouble()
+        var c =x[2].toDouble()
+        if (a!=0.0){
+            val delta= b*b - 4*a*c
+            if (delta==0.0){
+                val x= -b/(2*a)
+                print("%.4f".format(x))
+            }
+            else if(delta>0){
+                val x1= (-b+ sqrt(delta))/(2*a)
+                val x2= (-b- sqrt(delta))/(2*a)
+                println("%.4f".format(x1))
+                print("%.4f".format(x2))
+            }
+            else{
+                print("No Solution")
+            }
+        }
+    }
+}
