@@ -1,0 +1,24 @@
+import kotlin.math.sin
+
+fun main() {
+    var n = readLine()?.split(" ")
+    if (n!=null){
+        var a= n[0].toDouble()
+        var b=n[1].toDouble()
+        if (a==0.0 && b==0.0){
+            println("Many Solutions")
+        }
+        else if (a==0.0 && b!=0.0){
+            println("No Solution")
+        }
+        else if (a!=0.0 && b==0.0){
+            print("%.2f".format(0.00))
+        }
+        else{
+            val c = -b/a
+            println("%.2f".format(c))
+        }
+    }
+
+
+}
