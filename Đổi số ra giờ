@@ -1,0 +1,8 @@
+fun main() {
+    var x = readLine()?.toLong()?:0
+    val gio=x/3600
+    val phut= (x- gio*3600)/60
+    val giay= (x-gio*3600 - phut*60)
+    val format = String.format("%02d:%02d:%02d",gio,phut,giay)
+    print(format)
+}
