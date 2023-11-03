@@ -1,0 +1,21 @@
+import kotlin.math.sqrt
+
+
+fun main() {
+    var n = readLine()?.split(" ")
+    if (n!=null){
+        var a= n[0].toDouble()
+        var b=n[1].toDouble()
+        var c=n[2].toDouble()
+        if (a+b>c && a+c>b && c+b>a){
+            var p = (a+b+c)/2
+            var s= sqrt(p*(p-a)*(p-b)*(p-c))
+            print("%.4f".format(s))
+        }
+        else{
+            print("No Solution")
+        }
+    }
+
+
+}
