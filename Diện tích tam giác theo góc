@@ -1,0 +1,13 @@
+import kotlin.math.sin
+
+fun main() {
+    var n = readLine()?.split(" ")
+    if (n!=null){
+        var a= n[0].toDouble()
+        var b=n[1].toDouble()
+        var c= n[2].toDouble()*3.14159/180
+        println("%.2f".format(a*b* sin(c)/2))
+    }
+
+
+}
