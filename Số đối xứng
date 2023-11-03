@@ -1,0 +1,9 @@
+fun main() {
+    var x:String = readln()
+    if (x==x.reversed()){
+        print("Yes")
+    }
+    else{
+        print("No")
+    }
+}
