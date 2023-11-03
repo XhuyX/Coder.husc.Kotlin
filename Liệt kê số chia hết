@@ -1,0 +1,20 @@
+import kotlin.math.min
+
+fun main() {
+    var n= readLine()?.split(" ")
+    if (n!=null){
+        val a= n[1].toLong()
+        val b=n[2].toLong()
+        for (i in min(a,b)..n[0].toLong()){
+            if (i%a==0.toLong()){
+                print(i)
+                print(" ")
+            }
+            else if(i%b==0.toLong()){
+                print(i)
+                print(" ")
+            }
+
+        }
+    }
+}
