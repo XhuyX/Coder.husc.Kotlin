@@ -1,0 +1,9 @@
+fun main() {
+    var n = readLine()?.split(" ")
+    if (n!=null){
+        var x = (n[0].toLong()%100*n[1].toLong()%100)%100
+        var y = (n[2].toLong()%100*n[3].toLong()%100)%100
+        print(x*y/10%10)
+        print(x*y%10)
+    }
+}
