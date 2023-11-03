@@ -1,0 +1,11 @@
+fun main(args: Array<String>) {
+    var n= readLine()?.split(" ")
+    if (n!=null){
+        var a = n[0].toLong()
+        var b = n[1].toLong()
+        var c = n[2].toLong()
+        var d = n[3].toLong()
+        val s:Long= a*b-c*d
+        print("Difference = $s")
+    }
+}
