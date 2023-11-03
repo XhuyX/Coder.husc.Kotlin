@@ -1,0 +1,17 @@
+fun main(args: Array<String>) {
+    var n= readLine()?.split(" ")
+    if (n!=null){
+        var a = n[0].toLong()
+        var b = n[1].toLong()
+        print("$a + $b = ")
+        println(a+b)
+        print("$a - $b = ")
+        println(a-b)
+        print("$a * $b = ")
+        println(a*b)
+        print("$a / $b = ")
+        println(a/b)
+        print("$a % $b = ")
+        println(a%b)
+    }
+}
