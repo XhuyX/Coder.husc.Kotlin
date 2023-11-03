@@ -1,0 +1,18 @@
+fun main() {
+    var x = readLine()?.toDouble()?:0.0
+    if (x<0 || x>100){
+        print("Out of Intervals")
+    }
+    else if (x<=25){
+        print("Interval [0,25]")
+    }
+    else if (x<=50){
+        print("Interval (25,50]")
+    }
+    else if (x<=75){
+        print("Interval (50,75]")
+    }
+    else{
+        print("Interval (75,100]")
+    }
+}
