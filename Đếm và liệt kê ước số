@@ -1,0 +1,25 @@
+import kotlin.math.sqrt
+fun main(){
+    var n = readLine()?.toInt()?:0
+    if (n==1){
+        println(1)
+        print(1)
+    }
+    else{
+        var mang = mutableListOf(1,n)
+        var x = sqrt(n.toDouble()).toInt()
+        for (i in 2..x){
+            if (n%i ==0){
+                mang.add(i)
+                if (n/i != i){
+                    mang.add(n/i)
+
+                }
+            }
+        }
+        println(mang.size)
+        mang.sort()
+        var ans = mang.joinToString(" ")
+        print(ans)
+    }
+}
