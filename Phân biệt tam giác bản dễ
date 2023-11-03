@@ -1,0 +1,17 @@
+fun main() {
+    var x= readLine()?.split(" ")
+    if (x!=null){
+        var a=x[0].toDouble()
+        var b =x[1].toDouble()
+        var c =x[2].toDouble()
+        if (a==b && b==c){
+            print("Tam giac deu")
+        }
+        else if(a==b || a==c||c==b){
+            print("Tam giac can")
+        }
+        else{
+            print("Tam giac thuong")
+        }
+    }
+}
