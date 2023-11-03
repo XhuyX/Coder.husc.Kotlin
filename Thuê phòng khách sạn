@@ -1,0 +1,11 @@
+import kotlin.math.ceil
+
+fun main() {
+    var n = readLine()?.split(" ")
+    if (n!=null){
+        var a= n[0].toDouble()
+        var b= n[1].toDouble()
+        var c  = n[2].toLong()
+        print((ceil(a/c)+ ceil(b/c)).toLong())
+    }
+}
