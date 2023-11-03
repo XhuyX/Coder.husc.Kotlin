@@ -1,0 +1,15 @@
+import kotlin.math.sqrt
+fun main() {
+    var n = readLine()?.toDouble()?:0.0
+    if (n>0){
+        var x =n*n + sqrt(n)+1
+        print("%.6f".format(x))
+    }
+    else if (n== -3.0){
+        print("Div by zero")
+    }
+    else{
+        n.toDouble()
+        print("%.6f".format((n*n*n + 2*n +1)/(n+3)))
+    }
+}
