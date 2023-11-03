@@ -1,0 +1,9 @@
+fun main() {
+    var n= readLine()?.toLong()?:0
+    if (n%2!=0.toLong() || (n>0 && 100<= n && n<=999 )){
+        print("YES")
+    }
+    else{
+        print("NO")
+    }
+}
