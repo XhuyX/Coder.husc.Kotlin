@@ -12,9 +12,9 @@ fun main() {
         }
     }
     if (s>n){
-        print("Yes")
+        print("YES")
     }
     else{
-        print("No")
+        print("NO")
     }
 }
